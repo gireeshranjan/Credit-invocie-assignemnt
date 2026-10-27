@@ -1,0 +1,9 @@
+{
+  "selected_model": "enriched_logistic",
+  "rule": "Within .005 of best validation AUC, lowest Brier; complexity tie-break.",
+  "review_capacity_assumption": 0.2,
+  "hyperparameters": {
+    "C": 0.05
+  },
+  "test_used_for_selection": false
+}

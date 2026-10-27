@@ -1,0 +1,15 @@
+measure,meaning
+default_rate,Defaulted loan count / loan count within each group; loan-weighted.
+customer_count,Distinct customers within a group; not additive across product/income intersections.
+education_customer_income,One customer once; annual_income is USD per source dictionary.
+original_loan_amount,Dataset monetary units; dictionary does not confirm currency for loan amounts.
+original_amount_on_defaulted,Original amounts on labelled defaulted loans; not expected loss or realised loss.
+last_recorded_balance,Sum after each loan's month 12; not a common calendar-date balance.
+small_group,"Fewer than 100 loans: descriptive flag, not a statistical confidence guarantee."
+income_group,"Left-closed intervals: 30,000 belongs to 30k-under 60k, etc."
+missing,Unknowns retained. No bureau records differs from observed zero overdue days.
+interpretation,Synthetic descriptive associations; no causal or lending-policy conclusions.
+vintage_quarterly,"Loans grouped by origination quarter; the default rate is each cohort's eventual labelled outcome, not the date of default."
+control_limits,Portfolio default rate +/- 2 binomial standard errors for each cohort's size; a cohort outside the band differs by more than random variation would usually explain.
+calendar_month,"Origination month + instalment number; assumes one instalment per month, starting the month after origination."
+dpd30_rate,Share of loan-months 30+ days past due (the same months as Missed in this data).

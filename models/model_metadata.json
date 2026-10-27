@@ -1,0 +1,66 @@
+{
+  "feature_spec": {
+    "numeric": [
+      "age",
+      "annual_income",
+      "years_employed",
+      "num_dependents",
+      "years_at_residence",
+      "loan_amount",
+      "tenure_months",
+      "collateral_flag",
+      "loan_to_income",
+      "bur_n_lines",
+      "bur_n_active",
+      "bur_n_written_off",
+      "bur_total_sanctioned",
+      "bur_total_outstanding",
+      "bur_max_dpd",
+      "bur_mean_dpd",
+      "bur_n_dpd30",
+      "bur_nonbank_share",
+      "bur_n_dpd_known",
+      "bur_n_dpd_missing",
+      "bur_dpd_coverage",
+      "bur_utilisation",
+      "bur_thin_file",
+      "rp_n_missed",
+      "rp_n_late",
+      "rp_max_dpd",
+      "rp_mean_dpd",
+      "rp_max_consec_missed",
+      "rp_pct_on_time",
+      "rp_paid_to_due",
+      "rp_dpd_first3",
+      "rp_dpd_last3",
+      "rp_dpd_trend",
+      "emi_to_income"
+    ],
+    "categorical": [
+      "employment_type",
+      "education_level",
+      "occupation_sector",
+      "housing_type",
+      "region",
+      "loan_type",
+      "loan_purpose",
+      "disbursal_channel"
+    ]
+  },
+  "selected_model": "enriched_logistic",
+  "threshold": 0.21679574810059582,
+  "risk_band_boundaries": [
+    0.13279970164770963,
+    0.22618564512535946
+  ],
+  "limitation": "Synthetic, retrospective default-label classification. Default event dates, outcome horizon and bureau observation dates are unavailable. Repayment features may overlap the outcome. Scores are not validated future default probabilities.",
+  "seed": 20261026,
+  "training_data_sha256": "a50f01056ef6aac42c726089659143326b0971bdc8c5dd12f1d7a53da3fcb591",
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "joblib": "1.6.0"
+  }
+}

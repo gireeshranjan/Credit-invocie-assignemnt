@@ -1,0 +1,23 @@
+{
+  "offline_tests_passed": 39,
+  "guardrail_and_data_tests": 31,
+  "workspace_and_server_configuration_tests": 8,
+  "browser_render": "PASS: Chrome rendered four portfolio charts and integrated assistant",
+  "employee_credentials_visible": false,
+  "server_only_credentials": true,
+  "dashboard_views_checked": [
+    "Portfolio overview",
+    "Customer segments",
+    "Loan review",
+    "Model performance",
+    "Data quality",
+    "Assistant analysis"
+  ],
+  "dashboard_filter_context": "PASS",
+  "explicit_whole_portfolio_reset": "PASS",
+  "selected_loan_context": "PASS",
+  "live_api_tested": false,
+  "reason": "No Anthropic API key configured during implementation",
+  "model": "claude-sonnet-5-5",
+  "preview": "reports/workspace/overview.png"
+}

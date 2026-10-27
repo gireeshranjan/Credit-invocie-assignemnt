@@ -1,0 +1,46 @@
+{
+  "timestamp_ist": "2026-10-27T00:02:53.095501+05:30",
+  "kept": [
+    "data/raw",
+    "data/processed",
+    "exports/excel",
+    "models",
+    "reports/analytics",
+    "reports/models",
+    "reports/chatbot",
+    ".venv",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "moved": {
+    "implementation": "scripts/",
+    "chatbot tests": "tests/",
+    "assignment and documentation": "docs/",
+    "original source tables": "data/raw/"
+  },
+  "removed": [
+    "files (10).zip (all six files verified byte-identical to extracted sources)",
+    ".DS_Store",
+    "__pycache__",
+    "reports/backups",
+    "exports/excel/archive",
+    "exports/excel/organisation_log.json",
+    "reports/models/validation.csv (identical to validation_comparison.csv)",
+    "notebooks/01_ingest_clean.ipynb (superseded; notes preserved in docs/DATA_PREPARATION.md)",
+    "data\\review\\loan_review_missing.csv",
+    "~$signment_deliverables_one_pager.docx"
+  ],
+  "retained_locked_items": [
+    "notebooks (empty folder held open by Windows)"
+  ],
+  "raw_data_sha256": {
+    "bureau_credit.csv": "a5ffa76b67bfbd4452e19cfef16503e128ab1bccf7617a5d4ed77a055c7e1603",
+    "collections_events.csv": "76442b5e09d6b03becde563409e17c6431e5359d6ffb09e819061df594615ae5",
+    "customers.csv": "a194e65ccc40979c55675a7b41d0d4c4f7cd27299771718c1e7db69be29259a6",
+    "DATA_DICTIONARY.md": "df723538a6d690fa01f6c1e228214ffc5c574592d22d3f3c1e5f874ae1e42ad8",
+    "loan_accounts.csv": "6cbe24fadd1545b03e319208a4f2cdaea1e2623c72e7c3ac1cebfdd77a03792a",
+    "repayment_history.csv": "1a7161b868e7fc9e9f7f449cf4e1d4ea45cf2b21a4df997963a5d1165f1e5129"
+  },
+  "processed_data_hash_matches_selected_model": true,
+  "claude_configuration_changed": false
+}

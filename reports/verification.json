@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "loans_retained": 14685,
+  "customers": 10000,
+  "duplicate_loan_ids": 0,
+  "customer_cross_partition_leakage": 0,
+  "source_values_and_missingness_preserved": true,
+  "excel_matches_cleaned_csv": true,
+  "saved_scores_match_model": true,
+  "reported_test_metrics_recomputed": true,
+  "selected_model": "enriched_logistic"
+}

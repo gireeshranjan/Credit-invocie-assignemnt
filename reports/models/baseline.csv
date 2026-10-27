@@ -1,0 +1,2 @@
+model,loans,defaults,default_rate,auc,ks,gini,average_precision,accuracy,precision,recall,f1,brier,log_loss,mean_probability,threshold,flagged_share,true_negative,false_positive,false_negative,true_positive
+always_performing_training_prevalence_score,2938,473,0.1609938733832539,0.5,0.0,0.0,0.1609938733832539,0.8390061266167461,0.0,0.0,0.0,0.13507484774939263,0.4413142855428535,0.16095346197502836,1.0,0.0,2465,0,473,0

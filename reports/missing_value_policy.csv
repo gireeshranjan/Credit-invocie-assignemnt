@@ -1,0 +1,11 @@
+field,condition,treatment,reason
+years_employed,Missing + Unemployed,0 + logical-fill flag,Current employment tenure.
+years_employed,Missing + other employment types,Keep null + flag,Unknown group; retain all loans.
+num_dependents,Missing,Keep null + flag,Unknown is not zero dependents.
+years_at_residence,Missing,Keep null + flag,Unknown is not a recent move.
+interest_rate_pct,Missing,Keep null + flag,Unknown is not an interest-free loan.
+bureau.days_past_due,Missing in any status,Keep null; observed-only summaries + coverage,No invented delinquency. All-missing summaries stay null.
+bureau.date_closed,Blank while Active,Keep null / not applicable,Closure has not occurred.
+bureau summaries,No matching records,Zero recorded counts; unknown amounts/DPD/ratios,Unavailable external history is not proof of no external debt.
+collections summaries,No matching records,Zero recorded events/recovery + absence flag,Unknown amounts in existing records remain unknown.
+model preprocessing,Features requiring imputation,Fit any imputer on training data only,No model-specific statistical fills in the analytics dataset.

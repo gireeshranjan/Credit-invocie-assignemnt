@@ -1,0 +1,930 @@
+{
+  "age": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      24.0,
+      29.0,
+      32.0,
+      35.0,
+      38.0,
+      40.0,
+      43.0,
+      47.0,
+      52.0
+    ],
+    "reference_shares": {
+      "(35.0, 38.0]": 0.11384790011350737,
+      "(24.0, 29.0]": 0.11146424517593644,
+      "(-inf, 24.0]": 0.11078320090805903,
+      "(32.0, 35.0]": 0.10874006810442678,
+      "(43.0, 47.0]": 0.10646992054483541,
+      "(40.0, 43.0]": 0.1018161180476731,
+      "(47.0, 52.0]": 0.09875141884222474,
+      "(52.0, inf]": 0.09284903518728717,
+      "(29.0, 32.0]": 0.08683314415437003,
+      "(38.0, 40.0]": 0.0684449489216799
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "annual_income": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      45800.0,
+      57700.0,
+      66000.0,
+      72600.0,
+      78900.0,
+      85400.0,
+      91900.0,
+      100420.00000000007,
+      112100.0
+    ],
+    "reference_shares": {
+      "(78900.0, 85400.0]": 0.10102156640181612,
+      "(57700.0, 66000.0]": 0.10068104426787741,
+      "(-inf, 45800.0]": 0.10068104426787741,
+      "(100420.0, 112100.0]": 0.10045402951191827,
+      "(66000.0, 72600.0]": 0.10045402951191827,
+      "(91900.0, 100420.0]": 0.09965947786606129,
+      "(45800.0, 57700.0]": 0.09954597048808173,
+      "(112100.0, inf]": 0.09954597048808173,
+      "(85400.0, 91900.0]": 0.09920544835414302,
+      "(72600.0, 78900.0]": 0.09875141884222474
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "years_employed": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.3,
+      1.0,
+      1.9,
+      2.9,
+      3.7,
+      4.9,
+      6.4,
+      8.6,
+      12.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.3]": 0.1024971623155505,
+      "(8.6, 12.0]": 0.09829738933030648,
+      "(2.9, 3.7]": 0.0981838819523269,
+      "(1.9, 2.9]": 0.09795686719636776,
+      "(1.0, 1.9]": 0.09727582292849035,
+      "(4.9, 6.4]": 0.09568671963677639,
+      "(12.0, inf]": 0.09307604994324631,
+      "(6.4, 8.6]": 0.0923950056753689,
+      "(0.3, 1.0]": 0.09148694665153236,
+      "(3.7, 4.9]": 0.09046538024971623,
+      "Missing": 0.04267877412031782
+    },
+    "missing_share": 0.04267877412031782,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "num_dependents": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "reference_shares": {
+      "(0.0, 1.0]": 0.34301929625425653,
+      "(-inf, 0.0]": 0.3213393870601589,
+      "(1.0, 2.0]": 0.19103291713961407,
+      "(2.0, 3.0]": 0.07162315550510784,
+      "Missing": 0.04733257661748014,
+      "(3.0, inf]": 0.02565266742338252
+    },
+    "missing_share": 0.04733257661748014,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "years_at_residence": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.4,
+      0.9,
+      1.4,
+      2.0,
+      2.7,
+      3.6,
+      4.7,
+      6.4,
+      9.3
+    ],
+    "reference_shares": {
+      "(-inf, 0.4]": 0.10374574347332577,
+      "(2.7, 3.6]": 0.10351872871736663,
+      "(0.4, 0.9]": 0.10170261066969354,
+      "(6.4, 9.3]": 0.09557321225879682,
+      "(4.7, 6.4]": 0.09523269012485812,
+      "(1.4, 2.0]": 0.09511918274687854,
+      "(9.3, inf]": 0.09375709421112373,
+      "(2.0, 2.7]": 0.09103291713961408,
+      "(3.6, 4.7]": 0.08717366628830873,
+      "(0.9, 1.4]": 0.08501702610669694,
+      "Missing": 0.048127128263337114
+    },
+    "missing_share": 0.048127128263337114,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "loan_amount": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      5389.402,
+      8295.792000000001,
+      10893.612000000001,
+      13673.860000000002,
+      17348.465,
+      21460.103999999996,
+      27391.333000000002,
+      38794.146,
+      110977.62100000016
+    ],
+    "reference_shares": {
+      "(110977.621, inf]": 0.1,
+      "(-inf, 5389.402]": 0.1,
+      "(21460.104, 27391.333]": 0.1,
+      "(13673.86, 17348.465]": 0.1,
+      "(17348.465, 21460.104]": 0.1,
+      "(27391.333, 38794.146]": 0.1,
+      "(10893.612, 13673.86]": 0.1,
+      "(5389.402, 8295.792]": 0.1,
+      "(38794.146, 110977.621]": 0.1,
+      "(8295.792, 10893.612]": 0.1
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "tenure_months": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      12.0,
+      24.0,
+      36.0,
+      48.0,
+      60.0,
+      72.0
+    ],
+    "reference_shares": {
+      "(24.0, 36.0]": 0.2505107832009081,
+      "(12.0, 24.0]": 0.19466515323496028,
+      "(-inf, 12.0]": 0.17480136208853575,
+      "(36.0, 48.0]": 0.1623155505107832,
+      "(72.0, inf]": 0.09727582292849035,
+      "(48.0, 60.0]": 0.07082860385925085,
+      "(60.0, 72.0]": 0.04960272417707151
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "collateral_flag": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.7072644721906924,
+      "(0.0, 1.0]": 0.2927355278093076
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "loan_to_income": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.06515300114724654,
+      0.10170971356271671,
+      0.13881895166947245,
+      0.18058604670539402,
+      0.23260231373410128,
+      0.29880199396743373,
+      0.39551998840579705,
+      0.6313269913172543,
+      1.6512668550359104
+    ],
+    "reference_shares": {
+      "(1.651, inf]": 0.1,
+      "(0.0652, 0.102]": 0.1,
+      "(0.631, 1.651]": 0.1,
+      "(0.396, 0.631]": 0.1,
+      "(0.233, 0.299]": 0.1,
+      "(0.299, 0.396]": 0.1,
+      "(-inf, 0.0652]": 0.1,
+      "(0.102, 0.139]": 0.1,
+      "(0.181, 0.233]": 0.1,
+      "(0.139, 0.181]": 0.1
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_n_lines": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "reference_shares": {
+      "(1.0, 2.0]": 0.26787741203178206,
+      "(0.0, 1.0]": 0.22837684449489218,
+      "(2.0, 3.0]": 0.20351872871736662,
+      "(3.0, 4.0]": 0.11804767309875142,
+      "(-inf, 0.0]": 0.10283768444948922,
+      "(4.0, inf]": 0.0793416572077185
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_n_active": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "reference_shares": {
+      "(0.0, 1.0]": 0.3619750283768445,
+      "(-inf, 0.0]": 0.32724177071509647,
+      "(1.0, 2.0]": 0.20533484676503974,
+      "(2.0, 3.0]": 0.0775255391600454,
+      "(3.0, inf]": 0.027922814982973894
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_n_written_off": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.7153234960272418,
+      "(0.0, 1.0]": 0.23541430192962542,
+      "(1.0, inf]": 0.0492622020431328
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_total_sanctioned": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      12673.759,
+      21958.390000000003,
+      30135.353000000003,
+      38072.73,
+      46129.85,
+      55583.84,
+      65870.774,
+      78463.84,
+      98597.42999999998
+    ],
+    "reference_shares": {
+      "Missing": 0.10283768444948922,
+      "(30135.353, 38072.73]": 0.08989784335981839,
+      "(65870.774, 78463.84]": 0.08978433598183883,
+      "(98597.43, inf]": 0.08978433598183883,
+      "(-inf, 12673.759]": 0.08978433598183883,
+      "(38072.73, 46129.85]": 0.08978433598183883,
+      "(21958.39, 30135.353]": 0.08967082860385925,
+      "(12673.759, 21958.39]": 0.08967082860385925,
+      "(55583.84, 65870.774]": 0.08967082860385925,
+      "(46129.85, 55583.84]": 0.08955732122587969,
+      "(78463.84, 98597.43]": 0.08955732122587969
+    },
+    "missing_share": 0.10283768444948922,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_total_outstanding": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1253.976000000001,
+      5763.226000000011,
+      10009.99,
+      14360.54,
+      19093.27,
+      24271.809,
+      31855.26800000002,
+      43180.274999999994
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.13269012485811577,
+      "Missing": 0.10283768444948922,
+      "(10009.99, 14360.54]": 0.08989784335981839,
+      "(5763.226, 10009.99]": 0.08978433598183883,
+      "(43180.275, inf]": 0.08978433598183883,
+      "(31855.268, 43180.275]": 0.08967082860385925,
+      "(19093.27, 24271.809]": 0.08967082860385925,
+      "(24271.809, 31855.268]": 0.08967082860385925,
+      "(1253.976, 5763.226]": 0.08967082860385925,
+      "(14360.54, 19093.27]": 0.08955732122587969,
+      "(0.0, 1253.976]": 0.046765039727582294
+    },
+    "missing_share": 0.10283768444948922,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_max_dpd": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      12.0,
+      19.0,
+      24.0,
+      28.0,
+      33.0,
+      39.0,
+      46.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.17593643586833144,
+      "Missing": 0.11293984108967083,
+      "(12.0, 19.0]": 0.10034052213393871,
+      "(33.0, 39.0]": 0.09738933030646992,
+      "(19.0, 24.0]": 0.09103291713961408,
+      "(28.0, 33.0]": 0.09080590238365494,
+      "(1.0, 12.0]": 0.08728717366628831,
+      "(46.0, inf]": 0.08706015891032917,
+      "(39.0, 46.0]": 0.07797956867196368,
+      "(24.0, 28.0]": 0.07366628830874007,
+      "(0.0, 1.0]": 0.005561861520998865
+    },
+    "missing_share": 0.11293984108967083,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_mean_dpd": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      0.3333333333333333,
+      5.5,
+      9.0,
+      12.333333333333334,
+      15.5,
+      19.0,
+      23.666666666666668,
+      31.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.17593643586833144,
+      "Missing": 0.11293984108967083,
+      "(12.333, 15.5]": 0.0920544835414302,
+      "(23.667, 31.0]": 0.09148694665153236,
+      "(5.5, 9.0]": 0.08933030646992055,
+      "(9.0, 12.333]": 0.08819523269012486,
+      "(0.333, 5.5]": 0.08740068104426787,
+      "(15.5, 19.0]": 0.08694665153234961,
+      "(19.0, 23.667]": 0.08694665153234961,
+      "(31.0, inf]": 0.08581157775255392,
+      "(0.0, 0.333]": 0.0029511918274687855
+    },
+    "missing_share": 0.11293984108967083,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_n_dpd30": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.6661748013620885,
+      "(0.0, 1.0]": 0.25539160045402953,
+      "(1.0, inf]": 0.07843359818388196
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_nonbank_share": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      0.3333333333333333,
+      0.5,
+      0.6,
+      0.6666666666666666,
+      1.0
+    ],
+    "reference_shares": {
+      "(0.667, 1.0]": 0.26617480136208854,
+      "(-inf, 0.0]": 0.20794551645856982,
+      "(0.333, 0.5]": 0.19614074914869467,
+      "(0.0, 0.333]": 0.11804767309875142,
+      "Missing": 0.10283768444948922,
+      "(0.6, 0.667]": 0.08774120317820658,
+      "(0.5, 0.6]": 0.021112372304199774
+    },
+    "missing_share": 0.10283768444948922,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_n_dpd_known": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "reference_shares": {
+      "(1.0, 2.0]": 0.2676503972758229,
+      "(0.0, 1.0]": 0.23575482406356413,
+      "(2.0, 3.0]": 0.19897843359818387,
+      "(-inf, 0.0]": 0.11293984108967083,
+      "(3.0, 4.0]": 0.11225879682179342,
+      "(4.0, inf]": 0.07241770715096481
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_n_dpd_missing": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.9318955732122588,
+      "(0.0, inf]": 0.0681044267877412
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_dpd_coverage": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      1.0
+    ],
+    "reference_shares": {
+      "(-inf, 1.0]": 0.8971623155505107,
+      "Missing": 0.10283768444948922
+    },
+    "missing_share": 0.10283768444948922,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_utilisation": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.2195546429883606,
+      0.3041918676197209,
+      0.3819635196341885,
+      0.45895760563453736,
+      0.5295972509273095,
+      0.5960456744609999,
+      0.6686481688890769,
+      0.7413965915148575,
+      0.8305911498624192
+    ],
+    "reference_shares": {
+      "Missing": 0.32724177071509647,
+      "(0.459, 0.53]": 0.06753688989784336,
+      "(0.596, 0.669]": 0.06753688989784336,
+      "(-inf, 0.22]": 0.0674233825198638,
+      "(0.831, inf]": 0.06730987514188422,
+      "(0.22, 0.304]": 0.06730987514188422,
+      "(0.382, 0.459]": 0.06730987514188422,
+      "(0.741, 0.831]": 0.06719636776390465,
+      "(0.304, 0.382]": 0.06708286038592509,
+      "(0.669, 0.741]": 0.06708286038592509,
+      "(0.53, 0.596]": 0.06696935300794551
+    },
+    "missing_share": 0.32724177071509647,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "bur_thin_file": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.8971623155505107,
+      "(0.0, 1.0]": 0.10283768444948922
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_n_missed": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.5817253121452894,
+      "(0.0, 1.0]": 0.30431328036322364,
+      "(1.0, 2.0]": 0.08671963677639047,
+      "(2.0, inf]": 0.02724177071509648
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_n_late": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "reference_shares": {
+      "(0.0, 1.0]": 0.33825198637911463,
+      "(1.0, 2.0]": 0.24903518728717366,
+      "(-inf, 0.0]": 0.24324631101021565,
+      "(2.0, 3.0]": 0.11713961407491487,
+      "(3.0, inf]": 0.05232690124858116
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_max_dpd": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      7.0,
+      15.0,
+      21.0,
+      25.0,
+      33.0,
+      50.0,
+      65.0,
+      78.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.1452894438138479,
+      "(15.0, 21.0]": 0.10817253121452894,
+      "(25.0, 33.0]": 0.10340522133938707,
+      "(65.0, 78.0]": 0.10283768444948922,
+      "(7.0, 15.0]": 0.10261066969353008,
+      "(50.0, 65.0]": 0.10238365493757094,
+      "(33.0, 50.0]": 0.09727582292849035,
+      "(78.0, inf]": 0.09330306469920545,
+      "(21.0, 25.0]": 0.088422247446084,
+      "(0.0, 7.0]": 0.05629965947786606
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_mean_dpd": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      0.6666666666666666,
+      1.5,
+      2.25,
+      3.25,
+      4.5,
+      6.083333333333333,
+      7.75,
+      10.5
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.1452894438138479,
+      "(1.5, 2.25]": 0.10794551645856981,
+      "(4.5, 6.083]": 0.10272417707150965,
+      "(10.5, inf]": 0.09977298524404087,
+      "(0.667, 1.5]": 0.09909194097616345,
+      "(7.75, 10.5]": 0.09841089670828604,
+      "(6.083, 7.75]": 0.0981838819523269,
+      "(3.25, 4.5]": 0.0960272417707151,
+      "(2.25, 3.25]": 0.09228149829738932,
+      "(0.0, 0.667]": 0.060272417707150965
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_max_consec_missed": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      1.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.5817253121452894,
+      "(0.0, 1.0]": 0.38717366628830874,
+      "(1.0, inf]": 0.031101021566401817
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_pct_on_time": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.6666666666666667,
+      0.75,
+      0.8333333333333334,
+      0.9166666666666666,
+      1.0
+    ],
+    "reference_shares": {
+      "(0.833, 0.917]": 0.2771850170261067,
+      "(0.75, 0.833]": 0.25777525539160046,
+      "(0.667, 0.75]": 0.1785471055618615,
+      "(0.917, 1.0]": 0.1452894438138479,
+      "(-inf, 0.667]": 0.14120317820658343
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_paid_to_due": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.8333333333333334,
+      0.9166666666666666,
+      0.9166666666666669,
+      1.0
+    ],
+    "reference_shares": {
+      "(0.9166666666666669, 1.0]": 0.5817253121452894,
+      "(0.8333333333333334, 0.9166666666666666]": 0.1844494892167991,
+      "(0.9166666666666666, 0.9166666666666669]": 0.12656072644721908,
+      "(-inf, 0.8333333333333334]": 0.10726447219069239
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_dpd_first3": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      0.3333333333333333,
+      4.333333333333333,
+      7.666666666666667,
+      16.666666666666668
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.5948921679909194,
+      "(0.333, 4.333]": 0.10385925085130533,
+      "(16.667, inf]": 0.09875141884222474,
+      "(7.667, 16.667]": 0.09807037457434734,
+      "(4.333, 7.667]": 0.09614074914869467,
+      "(0.0, 0.333]": 0.008286038592508514
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_dpd_last3": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.0,
+      0.6666666666666666,
+      4.333333333333333,
+      7.666666666666667,
+      16.0
+    ],
+    "reference_shares": {
+      "(-inf, 0.0]": 0.5928490351872872,
+      "(7.667, 16.0]": 0.10034052213393871,
+      "(16.0, inf]": 0.09897843359818388,
+      "(4.333, 7.667]": 0.09750283768444949,
+      "(0.667, 4.333]": 0.09466515323496028,
+      "(0.0, 0.667]": 0.015664018161180477
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "rp_dpd_trend": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      -12.666666666666666,
+      -5.666666666666666,
+      -0.6666666666666666,
+      0.0,
+      1.0000000000000002,
+      5.666666666666667,
+      12.0
+    ],
+    "reference_shares": {
+      "(-0.667, 0.0]": 0.3755959137343927,
+      "(-5.667, -0.667]": 0.10295119182746879,
+      "(1.0, 5.667]": 0.1024971623155505,
+      "(-inf, -12.667]": 0.10124858115777526,
+      "(12.0, inf]": 0.09965947786606129,
+      "(-12.667, -5.667]": 0.09909194097616345,
+      "(5.667, 12.0]": 0.0978433598183882,
+      "(0.0, 1.0]": 0.021112372304199774
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "emi_to_income": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.03322922249579436,
+      0.05052718492566988,
+      0.06627111748878924,
+      0.083865019969278,
+      0.1026938765182186,
+      0.1292326606263301,
+      0.1668195886036671,
+      0.22295969729619322,
+      0.32932553227945294
+    ],
+    "reference_shares": {
+      "(0.223, 0.329]": 0.1,
+      "(-inf, 0.0332]": 0.1,
+      "(0.167, 0.223]": 0.1,
+      "(0.129, 0.167]": 0.1,
+      "(0.0663, 0.0839]": 0.1,
+      "(0.103, 0.129]": 0.1,
+      "(0.0332, 0.0505]": 0.1,
+      "(0.0505, 0.0663]": 0.1,
+      "(0.329, inf]": 0.1,
+      "(0.0839, 0.103]": 0.1
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "employment_type": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Salaried": 0.5028376844494892,
+      "Self-Employed": 0.21010215664018161,
+      "Business Owner": 0.1261066969353008,
+      "Contract": 0.10896708286038592,
+      "Unemployed": 0.051986379114642454
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "education_level": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Bachelor's": 0.39977298524404087,
+      "High School": 0.28751418842224746,
+      "Master's": 0.17116912599318956,
+      "Vocational": 0.10124858115777526,
+      "Doctorate": 0.04029511918274688
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "occupation_sector": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Other": 0.11055618615209989,
+      "Government": 0.10635641316685585,
+      "Healthcare": 0.10136208853575482,
+      "Education": 0.10011350737797957,
+      "Hospitality": 0.09988649262202043,
+      "Construction": 0.09886492622020432,
+      "Finance": 0.09829738933030648,
+      "Retail": 0.09807037457434734,
+      "IT/Tech": 0.09670828603859251,
+      "Manufacturing": 0.08978433598183883
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "housing_type": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Owned": 0.29943246311010213,
+      "Rented": 0.29761634506242907,
+      "Mortgaged": 0.25380249716231557,
+      "Living with Family": 0.14914869466515324
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "region": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "South": 0.2505107832009081,
+      "North": 0.211577752553916,
+      "West": 0.1955732122587968,
+      "East": 0.18603859250851304,
+      "Central": 0.15629965947786606
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "loan_type": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Personal Loan": 0.3547105561861521,
+      "Credit Card": 0.25402951191827466,
+      "Auto Loan": 0.19545970488081726,
+      "Business Loan": 0.0985244040862656,
+      "Mortgage": 0.09727582292849035
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "loan_purpose": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Vehicle Purchase": 0.12167990919409762,
+      "Medical": 0.11464245175936436,
+      "Travel": 0.11384790011350737,
+      "Wedding": 0.11271282633371169,
+      "Debt Consolidation": 0.1094211123723042,
+      "Business Expansion": 0.10930760499432463,
+      "Other": 0.10692395005675369,
+      "Education": 0.105788876276958,
+      "Home Improvement": 0.10567536889897844
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "disbursal_channel": {
+    "kind": "categorical",
+    "interior_cutpoints": [],
+    "reference_shares": {
+      "Branch": 0.25300794551645855,
+      "Partner/DSA": 0.25300794551645855,
+      "Mobile App": 0.25164585698070374,
+      "Online": 0.24233825198637912
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  },
+  "model_score": {
+    "kind": "numeric",
+    "interior_cutpoints": [
+      0.061970572672254885,
+      0.08078177726290352,
+      0.09781282385360968,
+      0.11435257314699963,
+      0.13279970164770963,
+      0.15503532768858072,
+      0.18466137917220177,
+      0.22618564512535946,
+      0.29257433526330445
+    ],
+    "reference_shares": {
+      "(0.293, inf]": 0.1,
+      "(-inf, 0.062]": 0.1,
+      "(0.226, 0.293]": 0.1,
+      "(0.155, 0.185]": 0.1,
+      "(0.133, 0.155]": 0.1,
+      "(0.0978, 0.114]": 0.1,
+      "(0.185, 0.226]": 0.1,
+      "(0.0808, 0.0978]": 0.1,
+      "(0.062, 0.0808]": 0.1,
+      "(0.114, 0.133]": 0.1
+    },
+    "missing_share": 0.0,
+    "training_rows": 8810,
+    "numeric_bin_rule": "pd.cut with negative/positive infinity endpoints; missing separate"
+  }
+}

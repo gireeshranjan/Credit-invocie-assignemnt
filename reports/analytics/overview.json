@@ -1,0 +1,9 @@
+{
+  "loan_count": 14685,
+  "customer_count": 10000,
+  "defaults": 2364,
+  "default_rate": 0.1609805924412666,
+  "original_loan_amount": 601119531.64,
+  "original_amount_on_defaulted": 126919082.86999999,
+  "last_recorded_balance": 512637943.19000006
+}

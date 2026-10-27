@@ -1,0 +1,41 @@
+table,issue,rows_affected,action
+customers,duplicate customer_id,0,checked; fail if present
+customers,missing customer_id,0,checked; fail if present
+loans,duplicate account_id,0,checked; fail if present
+loans,missing account_id,0,checked; fail if present
+bureau,duplicate bureau_id,0,checked; fail if present
+bureau,missing bureau_id,0,checked; fail if present
+collections,duplicate collection_event_id,0,checked; fail if present
+collections,missing collection_event_id,0,checked; fail if present
+repayment,"duplicate (account_id, payment_month)",0,checked; fail if present
+keys,orphan foreign key (loans -> customers),0,checked; fail if present
+keys,orphan foreign key (bureau -> customers),0,checked; fail if present
+keys,orphan foreign key (repayment -> loans),0,checked; fail if present
+keys,orphan foreign key (collections -> loans),0,checked; fail if present
+customers,gender coded 'M'/'F' instead of 'Male'/'Female',600,"mapped M→Male, F→Female"
+customers,years_employed missing (Unemployed),23,set to 0: current job tenure; flag years_employed_imputed
+customers,years_employed missing (other employment types),477,retained as unknown; flag years_employed_missing; no statistical imputation
+customers,years_employed exceeds age − 18,1004,capped at age − 18 + flag years_employed_capped
+customers,num_dependents missing,500,retained as unknown + flag num_dependents_missing
+customers,years_at_residence missing,500,retained as unknown + flag years_at_residence_missing
+customers,years_at_residence exceeds age,5,capped at age + flag years_at_residence_capped
+customers,"annual_income at floor value 12,000 (looks clipped)",76,kept as-is; noted in assumptions log
+loans,interest_rate_pct missing,294,retained as unknown + flag interest_rate_missing
+loans,collateral_flag inconsistent with loan_type,0,checked (rule: Mortgage/Auto = secured)
+loans,origination_date earlier than customer_since,7293,"flagged; customer_since treated as unreliable, not used as a feature"
+bureau,days_past_due missing on Active lines,320,retained as unknown; no DPD imputation; tracked in aggregate missing/known counts
+bureau,days_past_due missing on Closed lines,260,retained as unknown; no DPD imputation; tracked in aggregate missing/known counts
+bureau,days_past_due missing on Written-Off lines,109,retained as unknown; no DPD imputation; tracked in aggregate missing/known counts
+bureau,date_closed blank on Active lines,11243,retained as not applicable while account is active
+bureau,date_opened after snapshot 2023-12-31,5760,kept for descriptive analytics; observation timing unverified; no assumed application-time availability
+bureau,date_closed in the future (up to 2029),6152,kept; same as above
+bureau,account_status inconsistent with date_closed,0,checked
+bureau,outstanding_amount > sanctioned_amount,0,checked
+repayment,On-Time with days_past_due > 0,0,checked
+repayment,Missed with emi_paid > 0,0,checked
+repayment,emi_paid > emi_due,0,checked
+repayment,negative amounts,0,checked
+repayment,accounts without exactly 12 months,0,checked
+collections,event_date earlier than loan origination_date,3875,"flagged; collections used for analytics only, not as model features"
+join,accounts whose customer has no bureau record,1462,"recorded counts 0 + bur_thin_file; DPD, amounts, shares and ratios remain unknown"
+join,accounts with no collections records,10407,zero recorded events/recovery + coll_no_records; no claim about unrecorded activity

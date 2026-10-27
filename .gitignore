@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.streamlit/secrets.toml
+reports/chatbot/audit.jsonl
+
+!.env.example
+dist/

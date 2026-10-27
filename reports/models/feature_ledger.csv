@@ -1,0 +1,77 @@
+column,use,timing_or_exclusion_note
+account_id,excluded,Join/group identifiers only; never predictors.
+customer_id,excluded,Join/group identifiers only; never predictors.
+loan_type,basic and enriched,Observed snapshot; historical availability not guaranteed.
+loan_purpose,basic and enriched,Observed snapshot; historical availability not guaranteed.
+loan_amount,basic and enriched,Observed snapshot; historical availability not guaranteed.
+interest_rate_pct,excluded,Not in explicit feature allow-list.
+tenure_months,basic and enriched,Observed snapshot; historical availability not guaranteed.
+origination_date,excluded,Not in explicit feature allow-list.
+disbursal_channel,basic and enriched,Observed snapshot; historical availability not guaranteed.
+collateral_flag,basic and enriched,Observed snapshot; historical availability not guaranteed.
+target_default,excluded,Outcome only; never a predictor.
+interest_rate_missing,excluded,Not in explicit feature allow-list.
+dq_orig_before_customer_since,excluded,Not in explicit feature allow-list.
+vintage_year,excluded,Not in explicit feature allow-list.
+age,basic and enriched,Observed snapshot; historical availability not guaranteed.
+gender,excluded,Subgroup audit only; excluded from initial predictors.
+marital_status,excluded,Not in explicit feature allow-list.
+education_level,basic and enriched,Observed snapshot; historical availability not guaranteed.
+employment_type,basic and enriched,Observed snapshot; historical availability not guaranteed.
+occupation_sector,basic and enriched,Observed snapshot; historical availability not guaranteed.
+years_employed,basic and enriched,Observed snapshot; historical availability not guaranteed.
+annual_income,basic and enriched,Observed snapshot; historical availability not guaranteed.
+region,basic and enriched,Observed snapshot; historical availability not guaranteed.
+city_tier,excluded,Not in explicit feature allow-list.
+num_dependents,basic and enriched,Observed snapshot; historical availability not guaranteed.
+housing_type,basic and enriched,Observed snapshot; historical availability not guaranteed.
+years_at_residence,basic and enriched,Observed snapshot; historical availability not guaranteed.
+customer_since,excluded,Not in explicit feature allow-list.
+years_employed_missing_original,excluded,Not in explicit feature allow-list.
+years_employed_imputed,excluded,Not in explicit feature allow-list.
+years_employed_missing,excluded,Not in explicit feature allow-list.
+years_employed_capped,excluded,Not in explicit feature allow-list.
+num_dependents_missing,excluded,Not in explicit feature allow-list.
+years_at_residence_missing,excluded,Not in explicit feature allow-list.
+years_at_residence_capped,excluded,Not in explicit feature allow-list.
+age_band,excluded,Not in explicit feature allow-list.
+income_band,excluded,Not in explicit feature allow-list.
+bur_n_lines,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_n_active,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_n_written_off,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_total_sanctioned,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_total_outstanding,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_max_dpd,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_mean_dpd,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_n_dpd30,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_nonbank_share,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_n_dpd_known,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_n_dpd_missing,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_has_written_off,excluded,Retrospective snapshot; timing relative to outcome unverified.
+bur_dpd_coverage,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+bur_utilisation,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_months,excluded,Retrospective snapshot; timing relative to outcome unverified.
+rp_emi,excluded,Retrospective snapshot; timing relative to outcome unverified.
+rp_n_missed,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_n_late,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_max_dpd,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_mean_dpd,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_max_consec_missed,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_pct_on_time,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_paid_to_due,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_dpd_first3,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_dpd_last3,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_dpd_trend,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+rp_ever_30dpd,excluded,Retrospective snapshot; timing relative to outcome unverified.
+rp_last_outstanding,excluded,Retrospective snapshot; timing relative to outcome unverified.
+coll_n_events,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+coll_total_recovered,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+coll_has_legal,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+coll_has_wo_referral,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+coll_n_recovered_missing,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+coll_n_event_before_origination,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+bur_thin_file,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+coll_no_records,excluded,Post-delinquency selection and unreliable event dates; analytics only.
+loan_to_income,basic and enriched,Observed snapshot; historical availability not guaranteed.
+emi_to_income,enriched only,Retrospective snapshot; timing relative to outcome unverified.
+customer_n_loans,excluded,Not in explicit feature allow-list.
